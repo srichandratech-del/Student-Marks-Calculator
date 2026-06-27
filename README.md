@@ -58,7 +58,7 @@ The project was built while learning Python fundamentals and focuses on writing 
 
 ## 🖼️ Screenshot
 
-![Student-Marks-Calculator](images/output.png)
+![Student-Marks-Calculator](images/Output.png)
 
 ---
 
