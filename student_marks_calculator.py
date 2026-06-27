@@ -1,5 +1,8 @@
 """Calculates the total marks and percentage of a student based on the marks obtained in different subjects."""
 
+import time
+
+
 while True:
 
     no_of_students = int(input("Enter the number of students: "))
@@ -11,10 +14,16 @@ while True:
         print()
         print("-"*60)
         name = input(f"Enter the name of Student {student}: ")
+        if name.strip() == "":
+            print("Invalid input. Please enter a valid name.")
+            name = input(f"Enter the name of Student {student}: ")
         names.append(name)
 
         print()
         No_Of_Subjects = int(input(f"Enter the number of subjects for Student {student}: "))
+        if type(No_Of_Subjects) != int or No_Of_Subjects <= 0:
+            print("Invalid input. Please enter a positive integer for the number of subjects.")
+            No_Of_Subjects = int(input(f"Enter the number of subjects for Student {student}: "))
         subjects.append(No_Of_Subjects)
 
         student_marks = []
@@ -25,7 +34,17 @@ while True:
         total_marks = sum(student_marks)
         marks.append(total_marks)
 
-    #Student Report       
+    #Student Report
+    print()
+    print("-"*60)
+    print("Calculating the report...")
+    print()
+    for i in range(21):
+        bar = "█" * i + "-" * (20 - i)
+        print(f"\r[{bar}] {i*5}%", end="")
+        time.sleep(0.1)
+    print()
+    print("\nReport Generated Successfully!")      
     print()
     print("="*60)
     print("Student Marks and Percentage Report".center(60))
@@ -59,5 +78,8 @@ while True:
     # Ask to continue
     choice = input("\nDo you want to continue? (yes/no): ")
     if choice.lower() != "yes":
+        print("\nExiting the Marks Calculator. Goodbye!.....")
+        print()
         print("Thank you for using the Marks Calculator!")
+        print("-"*60)
         break
