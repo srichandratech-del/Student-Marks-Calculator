@@ -7,7 +7,7 @@ A beginner-friendly Python console application for calculating **Total Marks**, 
 <br>
 
 ![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Work%20In%20Progress-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-Beginner-orange?style=for-the-badge)
 
